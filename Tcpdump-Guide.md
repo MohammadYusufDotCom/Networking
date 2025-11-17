@@ -6,3 +6,16 @@ tcpdump -i ens5 'tcp[tcpflags] & tcp-syn != 0 and not tcp[tcpflags] & tcp-ack !=
 # -vvv for verbose mode
 # Rest is for checking traffic which is originated from outside of instance
 ```
+#### In ouptput
+```
+
+'Flags [S]'
+
+Means 
+Flaf    Meaning	  Purpose
+S	      SYN	      start TCP connection
+.	      ACK	      acknowledgement
+P	      PUSH	    contains data
+F	      FIN	      close connection
+R	      RST	      reset connection
+```
